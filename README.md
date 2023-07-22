@@ -24,7 +24,7 @@ To use our purification step, follow these steps:
 
 ### 0. Clone this repository and install the required dependencies
 ```bash
-git clone ddd
+git clone https://github.com/seclab-yonsei/Robust-Deepfake-Detector-by-DDPM
 conda env create --file environment.yaml
 conda activate gan-diffusion
 cd gan-diffusion
