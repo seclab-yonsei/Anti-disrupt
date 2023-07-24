@@ -63,10 +63,20 @@ Train by setting defense_model_type in `train_CelebA.sh`.
 sh train_CelebA.sh
 ```
 
+#### Base Parameters list
+```bash
+TBD
+```
+
 ### 4.  Test defense model
 Test by setting defense_model_type in `test_CelebA.sh`.
 ```bash
 sh test_CelebA.sh
+```
+
+#### Base Parameters list
+```bash
+TBD
 ```
 
 
