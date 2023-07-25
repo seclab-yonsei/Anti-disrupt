@@ -1,6 +1,6 @@
 # Robust Training for Deepfake Detection Models Against Disruption-Induced Data Poisoning
 
-This repository contains the purification step for the paper "Robust Training for Deepfake Detection Models Against Disruption-Induced Data Poisoning" by Jaewoo Park, Hong Eun Ahn, Leo Hyun Park, Taekyoung Kwon, published in [conference/journal name] in [year].
+This repository contains the purification step for the paper "Robust Training for Deepfake Detection Models Against Disruption-Induced Data Poisoning" by Jaewoo Park, Hong Eun Ahn, Leo Hyun Park, Taekyoung Kwon, published in WORLD CONFERENCE ON INFORMATION SECURITY APPLICATIONS(WISA) in 2023.
 
 ## Introduction
 
@@ -63,9 +63,14 @@ Train by setting defense_model_type in `train_CelebA.sh`.
 sh train_CelebA.sh
 ```
 
-#### Base Parameters list
+##### Base Parameters list
 ```bash
-TBD
+CUDA_VISIBLE_DEVICES: which gpu to use
+defense_model_type: defense model to learn
+attack_type: attack to train
+train_noise_var: epsilon value of training attack noise
+test_noise_var: epsilon value of validation attack noise
+result_dir: result storage location
 ```
 
 ### 4.  Test defense model
@@ -74,14 +79,18 @@ Test by setting defense_model_type in `test_CelebA.sh`.
 sh test_CelebA.sh
 ```
 
-#### Base Parameters list
+##### Base Parameters list
 ```bash
-TBD
+gan_type: deepfake generation model (currently only supports StarGAN)
+defense_model_type: defense model
+defense_noise: attacks used to train the defense model
+attack_type: the attack you want to defend against
+test_noise_var: epsilon of the attack to defend against
+save_image: save image
 ```
 
 
 ## Conclusion
-
 Our proposed purification framework provides a robust solution to the problem of data poisoning in deepfake detection models. By purifying disruptive perturbations during model training, our approach enables successful deepfake image generation for training and significantly curtails accuracy loss in poisoned datasets. We hope that our work will contribute to the development of more effective and reliable deepfake detection models.
 
 ## TODO: Citation

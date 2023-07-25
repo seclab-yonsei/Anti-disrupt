@@ -48,7 +48,7 @@ if __name__ == '__main__':
     temp_parser.add_argument('--dataset', type=str, default='CelebA', choices=['CelebA'], help='choose dataset you want to use')
     temp_parser.add_argument('--train_noise_var', type=float, default=0.1, help='choose gaussian noise var for train')
     temp_parser.add_argument('--test_noise_var', type=float, default=0.1, help='choose gaussian noise var for test')
-    temp_parser.add_argument('--gpu_num', type=int, default=1, choices=gpu_list, help='choose gpu to use')
+    temp_parser.add_argument('--gpu_num', type=int, default=0, choices=gpu_list, help='choose gpu to use')
     temp_parser.add_argument('--result_dir', type=str, default='results', help='')
     temp_parser.add_argument('--num_of_image', type=int, default=1, help='num of output images')
     temp_parser.add_argument('--stargan_adv', type=utils.str2bool, nargs='?', const=True, default=False, help="stargan is adv trained?")

@@ -3,9 +3,7 @@ CUDA_VISIBLE_DEVICES=0 python train.py \
 --attack_type gaussian \
 --train_noise_var 0.025 \
 --test_noise_var 0.025 \
---gpu_num 0 \
 --result_dir results \
---num_of_image 1 \
 \
 --reformer_num_epochs 100 \
 --reformer_lr 0.001 \
