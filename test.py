@@ -28,10 +28,10 @@ if __name__ == '__main__':
 
     # Main configuration.
     parser.add_argument('--gan_type', type=str, default='stargan', choices=['stargan', 'stargan2', 'ganimation'], help='choose gan that you want to test')
-    parser.add_argument('--defense_model_type', type=str, default='ddpm', choices=['none', 'defensive-model-1', 'defensive-model-2', 'adv-train-blur', 'adv-train', 'ddpm', 'both', 'diffpure'], help='choose defense model that you want to train')
-    parser.add_argument('--attack_type', type=str, default='pgd', choices=['none', 'fgsm', 'bim', 'pgd', 'none'], help='choose noise you want to test')
+    parser.add_argument('--defense_model_type', type=str, default='none', choices=['none', 'defensive-model-1', 'defensive-model-2', 'adv-train-blur', 'adv-train', 'ddpm', 'both', 'diffpure'], help='choose defense model that you want to train')
+    parser.add_argument('--attack_type', type=str, default='fgsm', choices=['none', 'fgsm', 'bim', 'pgd', 'none'], help='choose noise you want to test')
     parser.add_argument('--dataset', type=str, default='CelebA', choices=['CelebA'], help='choose dataset you want to use')
-    parser.add_argument('--defense_noise', type=str, default='none', choices=['none', 'gaussian', 'fgsm'], help='choose noise you want to train')
+    parser.add_argument('--defense_noise', type=str, default='gaussian', choices=['none', 'gaussian', 'fgsm'], help='choose noise you want to train')
     # parser.add_argument('--train_noise_var', type=float, default=0.5, help='choose gaussian noise var for train')
     parser.add_argument('--test_noise_var', type=float, default=0.05, help='choose gaussian noise var for test')
     parser.add_argument('--gpu_num', type=int, default=0, choices=gpu_list, help='choose gpu to use')
@@ -54,7 +54,7 @@ if __name__ == '__main__':
 
 
     if 'diffpure' in config.defense_model_type:
-        config.ddpm_start_num = 500
+        config.ddpm_start_num = 300
     # utils.createFolder(config.final_result_dir)
     # path_list = [config.result_dir, config.dataset, config.defense_model_type]
     # result_dir=os.path.join(*path_list)

@@ -1235,15 +1235,17 @@ class Solver(object):
                 
                 ## defensive model type
                 if self.defense_model_type == None:
-                    pass
+                    deepfake_ref = []
                 elif 'defensive-model' in self.defense_model_type:
                     x_ref=defensive_model(x_adv)
+                    deepfake_ref=defensive_model(gen_noattack)
 
                 elif 'adv-train' in self.defense_model_type:
                     if 'blur' in self.defense_model_type:
                         x_ref = self.blur_tensor(x_adv)
                     else:
                         x_ref = x_adv
+                    deepfake_ref=[]
 
                 elif 'ddpm' in self.defense_model_type or 'both' in self.defense_model_type:
                     with torch.no_grad():
@@ -1257,6 +1259,7 @@ class Solver(object):
                         x_ref=defensive_model.diffpure(x_adv.shape[0], (3, 128, 128), self.device, x_adv, self.ddpm_start_num)
                     with torch.no_grad():
                         deepfake_ref=defensive_model.sample(gen_noattack.shape[0], (3, 128, 128), self.device, gen_noattack, self.ddpm_start_num)
+                    
 
 
 

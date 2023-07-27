@@ -43,7 +43,7 @@ if __name__ == '__main__':
             gpu_list.append(int(temp[-1]))
     # Main configuration.
     ## gainmation 추가
-    temp_parser.add_argument('--defense_model_type', type=str, default='defensive-model-1', choices=['defensive-model-1', 'defensive-model-2'], help='choose defense model that you want to train')
+    temp_parser.add_argument('--defense_model_type', type=str, default='defensive-model-2', choices=['defensive-model-1', 'defensive-model-2'], help='choose defense model that you want to train')
     temp_parser.add_argument('--attack_type', type=str, default='gaussian', choices=['gaussian', 'fgsm', 'i-fgsm', 'pgd', 'none'], help='choose noise you want to train')
     temp_parser.add_argument('--dataset', type=str, default='CelebA', choices=['CelebA'], help='choose dataset you want to use')
     temp_parser.add_argument('--train_noise_var', type=float, default=0.1, help='choose gaussian noise var for train')
