@@ -1,4 +1,4 @@
-# Robust Training for Deepfake Detection Models Against Disruption-Induced Data Poisoning
+# Anti-disrupt
 
 This repository contains the purification step for the paper "Robust Training for Deepfake Detection Models Against Disruption-Induced Data Poisoning" by Jaewoo Park, Hong Eun Ahn, Leo Hyun Park, Taekyoung Kwon, accepted in WORLD CONFERENCE ON INFORMATION SECURITY APPLICATIONS(WISA) in 2023.
 
