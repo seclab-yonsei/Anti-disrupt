@@ -24,10 +24,10 @@ To use our purification step, follow these steps:
 
 ### 0. Clone this repository and install the required dependencies
 ```bash
-git clone https://github.com/seclab-yonsei/Robust-Deepfake-Detector-by-DDPM
+git clone https://github.com/seclab-yonsei/Anti-disrupt.git
+cd Anti-disrupt
 conda env create --file environment.yaml
 conda activate gan-diffusion
-cd gan-diffusion
 ```
 
 ### 1. Prepare Pretrained StarGAN
