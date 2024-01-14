@@ -1,6 +1,6 @@
 # Anti-disrupt
 
-This repository contains the purification step for the paper "Robust Training for Deepfake Detection Models Against Disruption-Induced Data Poisoning" by Jaewoo Park, Hong Eun Ahn, Leo Hyun Park, Taekyoung Kwon, accepted in WORLD CONFERENCE ON INFORMATION SECURITY APPLICATIONS(WISA) in 2023.
+This repository contains the purification step for the paper "Coexistence of Deepfake Defenses: Addressing the Poisoning Challenge" by Jaewoo Park, Leo Hyun Park, Hong Eun Ahn, Taekyoung Kwon accepted in IEEE Access in 2024 and "Robust Training for Deepfake Detection Models Against Disruption-Induced Data Poisoning" by Jaewoo Park, Hong Eun Ahn, Leo Hyun Park, Taekyoung Kwon, accepted in WORLD CONFERENCE ON INFORMATION SECURITY APPLICATIONS(WISA) in 2023.
 
 ## Introduction
 
@@ -96,6 +96,16 @@ Our proposed purification framework provides a robust solution to the problem of
 ## TODO: Citation
 ```
 TBD
+```
+```
+@inproceedings{park2023robust,
+  title={Robust Training for Deepfake Detection Models Against Disruption-Induced Data Poisoning},
+  author={Park, Jaewoo and Ahn, Hong Eun and Park, Leo Hyun and Kwon, Taekyoung},
+  booktitle={International Conference on Information Security Applications},
+  pages={175--187},
+  year={2023},
+  organization={Springer}
+}
 ```
 
 
