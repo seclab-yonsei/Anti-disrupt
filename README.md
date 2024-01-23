@@ -95,7 +95,13 @@ Our proposed purification framework provides a robust solution to the problem of
 
 ## TODO: Citation
 ```
-TBD
+@article{park2024coexistence,
+  title={Coexistence of Deepfake Defenses: Addressing the Poisoning Challenge},
+  author={Park, Jaewoo and Park, Leo Hyun and Ahn, Hong Eun and Kwon, Taekyoung},
+  journal={IEEE Access},
+  year={2024},
+  publisher={IEEE}
+}
 ```
 ```
 @inproceedings{park2023robust,
