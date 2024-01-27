@@ -95,13 +95,17 @@ Our proposed purification framework provides a robust solution to the problem of
 
 ## TODO: Citation
 ```
-@article{park2024coexistence,
-  title={Coexistence of Deepfake Defenses: Addressing the Poisoning Challenge},
+@ARTICLE{10399770,
   author={Park, Jaewoo and Park, Leo Hyun and Ahn, Hong Eun and Kwon, Taekyoung},
-  journal={IEEE Access},
+  journal={IEEE Access}, 
+  title={Coexistence of Deepfake Defenses: Addressing the Poisoning Challenge}, 
   year={2024},
-  publisher={IEEE}
-}
+  volume={12},
+  number={},
+  pages={11674-11687},
+  keywords={Deepfakes;Biological system modeling;Training;Perturbation methods;Security;Computer crime;Purification;Deepfake;deepfake detection;deepfake disruption;data poisoning;adversarial purification},
+  doi={10.1109/ACCESS.2024.3353785}}
+
 ```
 ```
 @inproceedings{park2023robust,
